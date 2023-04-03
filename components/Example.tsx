@@ -34,16 +34,12 @@ export default function Example() {
             It Makes a Big Difference
           </Text>
         </Box>
-        <Box>
-          <HStack justifyContent="space-between">
-            <Heading> YOU promptimized</Heading>
-          </HStack>
-        </Box>
+
         <Stack direction="row" gap="100px" pt="100">
           <Box w="90%" border="2px" borderColor="#51da4c" p="15px">
             <Box borderBottom="2px" mb="20px" borderColor="#51da4c">
               <Heading textColor="black" fontSize="20px" mb="25px">
-                Input
+                Regular Input
               </Heading>
               <Text textColor="black" mb="25px" fontSize="16px">
                 How can I write better content on Twitter?
@@ -74,17 +70,16 @@ export default function Example() {
           <Box w="90%" border="2px" borderColor="#51da4c" p="15px">
             <Box borderBottom="2px" mb="20px" borderColor="#51da4c">
               <Heading textColor="black" fontSize="20px" mb="25px">
-                Input
+                Promptomized Input ⚡
               </Heading>
               <Text textColor="black" mb="25px" fontSize="16px">
-                In today's fast-paced digital world, it's more important than
-                ever to create engaging and high-quality content on Twitter.
-                What are some effective strategies and best practices for
-                writing better content on Twitter? How can you utilize different
-                media formats, target the right audience, and develop a
-                consistent brand voice to improve your Twitter content? Please
-                provide specific examples and actionable tips for creating
-                top-notch tweets."{" "}
+                In todays fast-paced digital world, its more important than ever
+                to create engaging and high-quality content on Twitter. What are
+                some effective strategies and best practices for writing better
+                content on Twitter? How can you utilize different media formats,
+                target the right audience, and develop a consistent brand voice
+                to improve your Twitter content? Please provide specific
+                examples and actionable tips for creating top-notch tweets.{" "}
               </Text>
             </Box>
             <Box>
@@ -96,7 +91,7 @@ export default function Example() {
                 <Text textColor="black" fontSize="16px">
                   <TypeAnimation
                     sequence={[
-                      "Creating engaging and high-quality content on Twitter can help you connect with your target audience, boost your brand's visibility and improve your overall social media marketing strategy. Here are some effective strategies and best practices to follow for writing better content on Twitter...",
+                      "Creating engaging and high-quality content on Twitter can help you connect with your target audience, boost your brands visibility and improve your overall social media marketing strategy. Here are some effective strategies and best practices to follow for writing better content on Twitter...",
                       1000,
                     ]}
                     speed={70}

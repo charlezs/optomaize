@@ -11,8 +11,6 @@ import {
   Text,
   Divider,
 } from "@chakra-ui/react";
-import { TypeAnimation } from "react-type-animation";
-import NextLink from "next/link";
 import Example from "@/components/Example";
 
 export default function Home() {
@@ -28,7 +26,7 @@ export default function Home() {
         <Stack direction="row" gap="100px" pt="100">
           <Stack direction="column" m="0">
             <Text mt="0" textColor="black" fontSize="60px">
-              Let's face it. Your prompts suck.
+              Lets face it. Your prompts suck.
             </Text>
             <Text fontSize="16px" textColor="black" pb="20px">
               Welcome to promptomize, your AI friend that helps YOU make good
