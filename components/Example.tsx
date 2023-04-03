@@ -23,7 +23,7 @@ export default function Example() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container maxW="100%" mt="30px">
+      <Container maxW="100%" pt="30px">
         <Box>
           <Text
             borderBottom="2px"
@@ -108,8 +108,8 @@ export default function Example() {
           <Button
             bg="transparent"
             color="#51da4c"
-            borderColor="black"
             size="md"
+            p="7"
             borderRadius="0"
             border="2px"
             fontWeight={400}
@@ -121,7 +121,7 @@ export default function Example() {
           >
             <NextLink href="/magic">
               {" "}
-              <Text color="black">Promptomize</Text>{" "}
+              <Text>Promptomize</Text>{" "}
             </NextLink>
           </Button>
         </Center>

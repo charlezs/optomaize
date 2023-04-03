@@ -1,193 +1,64 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 888;
-exports.ids = [888];
+exports.id = "pages/_app";
+exports.ids = ["pages/_app"];
 exports.modules = {
 
-/***/ 932:
+/***/ "./components/Footer.tsx":
+/*!*******************************!*\
+  !*** ./components/Footer.tsx ***!
+  \*******************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (/* binding */ Footer)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2210);
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6290);
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__]);
-_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
-
-
-
-const SocialButton = ({ children , label , href  })=>{
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.chakra.button, {
-        bg: (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.useColorModeValue)("blackAlpha.100", "whiteAlpha.100"),
-        rounded: "full",
-        w: 8,
-        h: 8,
-        cursor: "pointer",
-        as: "a",
-        href: href,
-        display: "inline-flex",
-        alignItems: "center",
-        justifyContent: "center",
-        transition: "background 0.3s ease",
-        _hover: {
-            bg: (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.useColorModeValue)("blackAlpha.200", "whiteAlpha.200")
-        },
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.VisuallyHidden, {
-                children: label
-            }),
-            children
-        ]
-    });
-};
-function Footer() {
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {
-        bg: (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.useColorModeValue)("gray.50", "gray.900"),
-        color: (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.useColorModeValue)("gray.700", "gray.200"),
-        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Container, {
-            as: _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Stack,
-            maxW: "6xl",
-            py: 4,
-            direction: {
-                base: "column",
-                md: "row"
-            },
-            spacing: 4,
-            justify: {
-                base: "center",
-                md: "space-between"
-            },
-            align: {
-                base: "center",
-                md: "center"
-            },
-            children: [
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {
-                    children: "\xa9 2022 Chakra Templates. All rights reserved"
-                }),
-                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Stack, {
-                    direction: "row",
-                    spacing: 6,
-                    children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(SocialButton, {
-                            label: "Twitter",
-                            href: "#",
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__.FaTwitter, {})
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(SocialButton, {
-                            label: "YouTube",
-                            href: "#",
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__.FaYoutube, {})
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(SocialButton, {
-                            label: "Instagram",
-                            href: "#",
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__.FaInstagram, {})
-                        })
-                    ]
-                })
-            ]
-        })
-    });
-}
-
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Footer)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/fa */ \"react-icons/fa\");\n/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__);\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__]);\n_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\nconst SocialButton = ({ children , label , href  })=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.chakra.button, {\n        bg: (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.useColorModeValue)(\"blackAlpha.100\", \"whiteAlpha.100\"),\n        rounded: \"full\",\n        w: 8,\n        h: 8,\n        cursor: \"pointer\",\n        as: \"a\",\n        href: href,\n        display: \"inline-flex\",\n        alignItems: \"center\",\n        justifyContent: \"center\",\n        transition: \"background 0.3s ease\",\n        _hover: {\n            bg: (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.useColorModeValue)(\"blackAlpha.200\", \"whiteAlpha.200\")\n        },\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.VisuallyHidden, {\n                children: label\n            }, void 0, false, {\n                fileName: \"/Users/charlesnyabeze/portfolio/optomaize/components/Footer.tsx\",\n                lineNumber: 40,\n                columnNumber: 7\n            }, undefined),\n            children\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/charlesnyabeze/portfolio/optomaize/components/Footer.tsx\",\n        lineNumber: 24,\n        columnNumber: 5\n    }, undefined);\n};\nfunction Footer() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n            bg: \"#51da4c\",\n            color: \"black\",\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Container, {\n                as: _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Stack,\n                maxW: \"6xl\",\n                py: 4,\n                direction: {\n                    base: \"column\",\n                    md: \"row\"\n                },\n                spacing: 4,\n                justify: {\n                    base: \"center\",\n                    md: \"space-between\"\n                },\n                align: {\n                    base: \"center\",\n                    md: \"center\"\n                },\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {\n                        children: \"\\xa9 charles1.eth. All rights reserved\"\n                    }, void 0, false, {\n                        fileName: \"/Users/charlesnyabeze/portfolio/optomaize/components/Footer.tsx\",\n                        lineNumber: 59,\n                        columnNumber: 11\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Stack, {\n                        direction: \"row\",\n                        spacing: 6,\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(SocialButton, {\n                                label: \"Twitter\",\n                                href: \"#\",\n                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__.FaTwitter, {}, void 0, false, {\n                                    fileName: \"/Users/charlesnyabeze/portfolio/optomaize/components/Footer.tsx\",\n                                    lineNumber: 62,\n                                    columnNumber: 15\n                                }, this)\n                            }, void 0, false, {\n                                fileName: \"/Users/charlesnyabeze/portfolio/optomaize/components/Footer.tsx\",\n                                lineNumber: 61,\n                                columnNumber: 13\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(SocialButton, {\n                                label: \"YouTube\",\n                                href: \"#\",\n                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__.FaYoutube, {}, void 0, false, {\n                                    fileName: \"/Users/charlesnyabeze/portfolio/optomaize/components/Footer.tsx\",\n                                    lineNumber: 65,\n                                    columnNumber: 15\n                                }, this)\n                            }, void 0, false, {\n                                fileName: \"/Users/charlesnyabeze/portfolio/optomaize/components/Footer.tsx\",\n                                lineNumber: 64,\n                                columnNumber: 13\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(SocialButton, {\n                                label: \"Instagram\",\n                                href: \"#\",\n                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__.FaInstagram, {}, void 0, false, {\n                                    fileName: \"/Users/charlesnyabeze/portfolio/optomaize/components/Footer.tsx\",\n                                    lineNumber: 68,\n                                    columnNumber: 15\n                                }, this)\n                            }, void 0, false, {\n                                fileName: \"/Users/charlesnyabeze/portfolio/optomaize/components/Footer.tsx\",\n                                lineNumber: 67,\n                                columnNumber: 13\n                            }, this)\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/charlesnyabeze/portfolio/optomaize/components/Footer.tsx\",\n                        lineNumber: 60,\n                        columnNumber: 11\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/charlesnyabeze/portfolio/optomaize/components/Footer.tsx\",\n                lineNumber: 50,\n                columnNumber: 9\n            }, this)\n        }, void 0, false, {\n            fileName: \"/Users/charlesnyabeze/portfolio/optomaize/components/Footer.tsx\",\n            lineNumber: 49,\n            columnNumber: 7\n        }, this)\n    }, void 0, false);\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL0Zvb3Rlci50c3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7OztBQVMwQjtBQUN5QztBQUduRSxNQUFNVSxlQUFlLENBQUMsRUFDcEJDLFNBQVEsRUFDUkMsTUFBSyxFQUNMQyxLQUFJLEVBS0wsR0FBSztJQUNKLHFCQUNFLDhEQUFDWiwyREFBYTtRQUNaYyxJQUFJVixtRUFBaUJBLENBQUMsa0JBQWtCO1FBQ3hDVyxTQUFTO1FBQ1RDLEdBQUc7UUFDSEMsR0FBRztRQUNIQyxRQUFRO1FBQ1JDLElBQUk7UUFDSlAsTUFBTUE7UUFDTlEsU0FBUztRQUNUQyxZQUFZO1FBQ1pDLGdCQUFnQjtRQUNoQkMsWUFBWTtRQUNaQyxRQUFRO1lBQ05WLElBQUlWLG1FQUFpQkEsQ0FBQyxrQkFBa0I7UUFDMUM7OzBCQUVBLDhEQUFDQyw0REFBY0E7MEJBQUVNOzs7Ozs7WUFDaEJEOzs7Ozs7O0FBR1A7QUFFZSxTQUFTZSxTQUFTO0lBQy9CLHFCQUNFO2tCQUNFLDRFQUFDMUIsaURBQUdBO1lBQUNlLElBQUc7WUFBVVksT0FBTTtzQkFDdEIsNEVBQUN6Qix1REFBU0E7Z0JBQ1JrQixJQUFJakIsbURBQUtBO2dCQUNUeUIsTUFBTTtnQkFDTkMsSUFBSTtnQkFDSkMsV0FBVztvQkFBRUMsTUFBTTtvQkFBVUMsSUFBSTtnQkFBTTtnQkFDdkNDLFNBQVM7Z0JBQ1RDLFNBQVM7b0JBQUVILE1BQU07b0JBQVVDLElBQUk7Z0JBQWdCO2dCQUMvQ0csT0FBTztvQkFBRUosTUFBTTtvQkFBVUMsSUFBSTtnQkFBUzs7a0NBRXRDLDhEQUFDNUIsa0RBQUlBO2tDQUFDOzs7Ozs7a0NBQ04sOERBQUNELG1EQUFLQTt3QkFBQzJCLFdBQVc7d0JBQU9HLFNBQVM7OzBDQUNoQyw4REFBQ3ZCO2dDQUFhRSxPQUFPO2dDQUFXQyxNQUFNOzBDQUNwQyw0RUFBQ0wscURBQVNBOzs7Ozs7Ozs7OzBDQUVaLDhEQUFDRTtnQ0FBYUUsT0FBTztnQ0FBV0MsTUFBTTswQ0FDcEMsNEVBQUNKLHFEQUFTQTs7Ozs7Ozs7OzswQ0FFWiw4REFBQ0M7Z0NBQWFFLE9BQU87Z0NBQWFDLE1BQU07MENBQ3RDLDRFQUFDTix1REFBV0E7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFPMUIsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL215LWFwcC8uL2NvbXBvbmVudHMvRm9vdGVyLnRzeD9hNzlmIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7XG4gIEJveCxcbiAgY2hha3JhLFxuICBDb250YWluZXIsXG4gIFN0YWNrLFxuICBUZXh0LFxuICB1c2VDb2xvck1vZGVWYWx1ZSxcbiAgVmlzdWFsbHlIaWRkZW4sXG4gIFZTdGFjayxcbn0gZnJvbSBcIkBjaGFrcmEtdWkvcmVhY3RcIjtcbmltcG9ydCB7IEZhSW5zdGFncmFtLCBGYVR3aXR0ZXIsIEZhWW91dHViZSB9IGZyb20gXCJyZWFjdC1pY29ucy9mYVwiO1xuaW1wb3J0IHsgUmVhY3ROb2RlIH0gZnJvbSBcInJlYWN0XCI7XG5cbmNvbnN0IFNvY2lhbEJ1dHRvbiA9ICh7XG4gIGNoaWxkcmVuLFxuICBsYWJlbCxcbiAgaHJlZixcbn06IHtcbiAgY2hpbGRyZW46IFJlYWN0Tm9kZTtcbiAgbGFiZWw6IHN0cmluZztcbiAgaHJlZjogc3RyaW5nO1xufSkgPT4ge1xuICByZXR1cm4gKFxuICAgIDxjaGFrcmEuYnV0dG9uXG4gICAgICBiZz17dXNlQ29sb3JNb2RlVmFsdWUoXCJibGFja0FscGhhLjEwMFwiLCBcIndoaXRlQWxwaGEuMTAwXCIpfVxuICAgICAgcm91bmRlZD17XCJmdWxsXCJ9XG4gICAgICB3PXs4fVxuICAgICAgaD17OH1cbiAgICAgIGN1cnNvcj17XCJwb2ludGVyXCJ9XG4gICAgICBhcz17XCJhXCJ9XG4gICAgICBocmVmPXtocmVmfVxuICAgICAgZGlzcGxheT17XCJpbmxpbmUtZmxleFwifVxuICAgICAgYWxpZ25JdGVtcz17XCJjZW50ZXJcIn1cbiAgICAgIGp1c3RpZnlDb250ZW50PXtcImNlbnRlclwifVxuICAgICAgdHJhbnNpdGlvbj17XCJiYWNrZ3JvdW5kIDAuM3MgZWFzZVwifVxuICAgICAgX2hvdmVyPXt7XG4gICAgICAgIGJnOiB1c2VDb2xvck1vZGVWYWx1ZShcImJsYWNrQWxwaGEuMjAwXCIsIFwid2hpdGVBbHBoYS4yMDBcIiksXG4gICAgICB9fVxuICAgID5cbiAgICAgIDxWaXN1YWxseUhpZGRlbj57bGFiZWx9PC9WaXN1YWxseUhpZGRlbj5cbiAgICAgIHtjaGlsZHJlbn1cbiAgICA8L2NoYWtyYS5idXR0b24+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBGb290ZXIoKSB7XG4gIHJldHVybiAoXG4gICAgPD5cbiAgICAgIDxCb3ggYmc9XCIjNTFkYTRjXCIgY29sb3I9XCJibGFja1wiPlxuICAgICAgICA8Q29udGFpbmVyXG4gICAgICAgICAgYXM9e1N0YWNrfVxuICAgICAgICAgIG1heFc9e1wiNnhsXCJ9XG4gICAgICAgICAgcHk9ezR9XG4gICAgICAgICAgZGlyZWN0aW9uPXt7IGJhc2U6IFwiY29sdW1uXCIsIG1kOiBcInJvd1wiIH19XG4gICAgICAgICAgc3BhY2luZz17NH1cbiAgICAgICAgICBqdXN0aWZ5PXt7IGJhc2U6IFwiY2VudGVyXCIsIG1kOiBcInNwYWNlLWJldHdlZW5cIiB9fVxuICAgICAgICAgIGFsaWduPXt7IGJhc2U6IFwiY2VudGVyXCIsIG1kOiBcImNlbnRlclwiIH19XG4gICAgICAgID5cbiAgICAgICAgICA8VGV4dD7CqSBjaGFybGVzMS5ldGguIEFsbCByaWdodHMgcmVzZXJ2ZWQ8L1RleHQ+XG4gICAgICAgICAgPFN0YWNrIGRpcmVjdGlvbj17XCJyb3dcIn0gc3BhY2luZz17Nn0+XG4gICAgICAgICAgICA8U29jaWFsQnV0dG9uIGxhYmVsPXtcIlR3aXR0ZXJcIn0gaHJlZj17XCIjXCJ9PlxuICAgICAgICAgICAgICA8RmFUd2l0dGVyIC8+XG4gICAgICAgICAgICA8L1NvY2lhbEJ1dHRvbj5cbiAgICAgICAgICAgIDxTb2NpYWxCdXR0b24gbGFiZWw9e1wiWW91VHViZVwifSBocmVmPXtcIiNcIn0+XG4gICAgICAgICAgICAgIDxGYVlvdXR1YmUgLz5cbiAgICAgICAgICAgIDwvU29jaWFsQnV0dG9uPlxuICAgICAgICAgICAgPFNvY2lhbEJ1dHRvbiBsYWJlbD17XCJJbnN0YWdyYW1cIn0gaHJlZj17XCIjXCJ9PlxuICAgICAgICAgICAgICA8RmFJbnN0YWdyYW0gLz5cbiAgICAgICAgICAgIDwvU29jaWFsQnV0dG9uPlxuICAgICAgICAgIDwvU3RhY2s+XG4gICAgICAgIDwvQ29udGFpbmVyPlxuICAgICAgPC9Cb3g+XG4gICAgPC8+XG4gICk7XG59XG4iXSwibmFtZXMiOlsiQm94IiwiY2hha3JhIiwiQ29udGFpbmVyIiwiU3RhY2siLCJUZXh0IiwidXNlQ29sb3JNb2RlVmFsdWUiLCJWaXN1YWxseUhpZGRlbiIsIkZhSW5zdGFncmFtIiwiRmFUd2l0dGVyIiwiRmFZb3V0dWJlIiwiU29jaWFsQnV0dG9uIiwiY2hpbGRyZW4iLCJsYWJlbCIsImhyZWYiLCJidXR0b24iLCJiZyIsInJvdW5kZWQiLCJ3IiwiaCIsImN1cnNvciIsImFzIiwiZGlzcGxheSIsImFsaWduSXRlbXMiLCJqdXN0aWZ5Q29udGVudCIsInRyYW5zaXRpb24iLCJfaG92ZXIiLCJGb290ZXIiLCJjb2xvciIsIm1heFciLCJweSIsImRpcmVjdGlvbiIsImJhc2UiLCJtZCIsInNwYWNpbmciLCJqdXN0aWZ5IiwiYWxpZ24iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/Footer.tsx\n");
 
 /***/ }),
 
-/***/ 2391:
+/***/ "./components/Layout.tsx":
+/*!*******************************!*\
+  !*** ./components/Layout.tsx ***!
+  \*******************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(932);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Footer__WEBPACK_IMPORTED_MODULE_2__]);
-_Footer__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
-
-
-
-function Layout({ children  }) {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("main", {
-                children: children
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Footer__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {})
-        ]
-    });
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
-
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ \"./components/Footer.tsx\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Footer__WEBPACK_IMPORTED_MODULE_2__]);\n_Footer__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\nfunction Layout({ children  }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"main\", {\n                children: children\n            }, void 0, false, {\n                fileName: \"/Users/charlesnyabeze/portfolio/optomaize/components/Layout.tsx\",\n                lineNumber: 11,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_Footer__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {}, void 0, false, {\n                fileName: \"/Users/charlesnyabeze/portfolio/optomaize/components/Layout.tsx\",\n                lineNumber: 12,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL0xheW91dC50c3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7OztBQUEwQjtBQUNJO0FBTTlCLFNBQVNFLE9BQU8sRUFBRUMsU0FBUSxFQUFTLEVBQUU7SUFDbkMscUJBQ0U7OzBCQUNFLDhEQUFDQzswQkFBTUQ7Ozs7OzswQkFDUCw4REFBQ0YsK0NBQU1BOzs7Ozs7O0FBR2I7QUFFQSxpRUFBZUMsTUFBTUEsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL215LWFwcC8uL2NvbXBvbmVudHMvTGF5b3V0LnRzeD8zYzhmIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBGb290ZXIgZnJvbSBcIi4vRm9vdGVyXCI7XG5cbnR5cGUgQ2hpbGQgPSB7XG4gIGNoaWxkcmVuOiBhbnk7XG59O1xuXG5mdW5jdGlvbiBMYXlvdXQoeyBjaGlsZHJlbiB9OiBDaGlsZCkge1xuICByZXR1cm4gKFxuICAgIDw+XG4gICAgICA8bWFpbj57Y2hpbGRyZW59PC9tYWluPlxuICAgICAgPEZvb3RlciAvPlxuICAgIDwvPlxuICApO1xufVxuXG5leHBvcnQgZGVmYXVsdCBMYXlvdXQ7XG4iXSwibmFtZXMiOlsiUmVhY3QiLCJGb290ZXIiLCJMYXlvdXQiLCJjaGlsZHJlbiIsIm1haW4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/Layout.tsx\n");
 
 /***/ }),
 
-/***/ 4178:
+/***/ "./pages/_app.tsx":
+/*!************************!*\
+  !*** ./pages/_app.tsx ***!
+  \************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ App)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6764);
-/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2210);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2391);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__, _components_Layout__WEBPACK_IMPORTED_MODULE_3__]);
-([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__, _components_Layout__WEBPACK_IMPORTED_MODULE_3__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
-
-
-
-
-// import { extendTheme } from "@chakra-ui/react";
-// const theme = extendTheme({
-//   env: {
-//     OPEN_AI_API_KEY: process.env.OPEN_AI_API_KEY,
-//   },
-// });
-function App({ Component , pageProps  }) {
-    return(// <ChakraProvider theme={theme}>
-    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.ChakraProvider, {
-        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
-            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
-                ...pageProps
-            })
-        })
-    }));
-}
-
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/styles/globals.css */ \"./styles/globals.css\");\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ \"./components/Layout.tsx\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__, _components_Layout__WEBPACK_IMPORTED_MODULE_3__]);\n([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__, _components_Layout__WEBPACK_IMPORTED_MODULE_3__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\n\n\n// import { extendTheme } from \"@chakra-ui/react\";\n// const theme = extendTheme({\n//   env: {\n//     OPEN_AI_API_KEY: process.env.OPEN_AI_API_KEY,\n//   },\n// });\nfunction App({ Component , pageProps  }) {\n    return(// <ChakraProvider theme={theme}>\n    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.ChakraProvider, {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_Layout__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n                ...pageProps\n            }, void 0, false, {\n                fileName: \"/Users/charlesnyabeze/portfolio/optomaize/pages/_app.tsx\",\n                lineNumber: 18,\n                columnNumber: 9\n            }, this)\n        }, void 0, false, {\n            fileName: \"/Users/charlesnyabeze/portfolio/optomaize/pages/_app.tsx\",\n            lineNumber: 17,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"/Users/charlesnyabeze/portfolio/optomaize/pages/_app.tsx\",\n        lineNumber: 16,\n        columnNumber: 5\n    }, this));\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9fYXBwLnRzeC5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7OztBQUE4QjtBQUVvQjtBQUNSO0FBQzFDLGtEQUFrRDtBQUVsRCw4QkFBOEI7QUFDOUIsV0FBVztBQUNYLG9EQUFvRDtBQUNwRCxPQUFPO0FBQ1AsTUFBTTtBQUVTLFNBQVNFLElBQUksRUFBRUMsVUFBUyxFQUFFQyxVQUFTLEVBQVksRUFBRTtJQUM5RCxPQUNFLGlDQUFpQztrQkFDakMsOERBQUNKLDREQUFjQTtrQkFDYiw0RUFBQ0MsMERBQU1BO3NCQUNMLDRFQUFDRTtnQkFBVyxHQUFHQyxTQUFTOzs7Ozs7Ozs7Ozs7Ozs7O0FBSWhDLENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9teS1hcHAvLi9wYWdlcy9fYXBwLnRzeD8yZmJlIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBcIkAvc3R5bGVzL2dsb2JhbHMuY3NzXCI7XG5pbXBvcnQgdHlwZSB7IEFwcFByb3BzIH0gZnJvbSBcIm5leHQvYXBwXCI7XG5pbXBvcnQgeyBDaGFrcmFQcm92aWRlciB9IGZyb20gXCJAY2hha3JhLXVpL3JlYWN0XCI7XG5pbXBvcnQgTGF5b3V0IGZyb20gXCIuLi9jb21wb25lbnRzL0xheW91dFwiO1xuLy8gaW1wb3J0IHsgZXh0ZW5kVGhlbWUgfSBmcm9tIFwiQGNoYWtyYS11aS9yZWFjdFwiO1xuXG4vLyBjb25zdCB0aGVtZSA9IGV4dGVuZFRoZW1lKHtcbi8vICAgZW52OiB7XG4vLyAgICAgT1BFTl9BSV9BUElfS0VZOiBwcm9jZXNzLmVudi5PUEVOX0FJX0FQSV9LRVksXG4vLyAgIH0sXG4vLyB9KTtcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQXBwKHsgQ29tcG9uZW50LCBwYWdlUHJvcHMgfTogQXBwUHJvcHMpIHtcbiAgcmV0dXJuIChcbiAgICAvLyA8Q2hha3JhUHJvdmlkZXIgdGhlbWU9e3RoZW1lfT5cbiAgICA8Q2hha3JhUHJvdmlkZXI+XG4gICAgICA8TGF5b3V0PlxuICAgICAgICA8Q29tcG9uZW50IHsuLi5wYWdlUHJvcHN9IC8+XG4gICAgICA8L0xheW91dD5cbiAgICA8L0NoYWtyYVByb3ZpZGVyPlxuICApO1xufVxuIl0sIm5hbWVzIjpbIkNoYWtyYVByb3ZpZGVyIiwiTGF5b3V0IiwiQXBwIiwiQ29tcG9uZW50IiwicGFnZVByb3BzIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/_app.tsx\n");
 
 /***/ }),
 
-/***/ 6764:
+/***/ "./styles/globals.css":
+/*!****************************!*\
+  !*** ./styles/globals.css ***!
+  \****************************/
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ 6689:
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
 /***/ ((module) => {
 
 "use strict";
@@ -195,7 +66,10 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ 6290:
+/***/ "react-icons/fa":
+/*!*********************************!*\
+  !*** external "react-icons/fa" ***!
+  \*********************************/
 /***/ ((module) => {
 
 "use strict";
@@ -203,15 +77,21 @@ module.exports = require("react-icons/fa");
 
 /***/ }),
 
-/***/ 997:
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("react/jsx-runtime");
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ }),
 
-/***/ 2210:
+/***/ "@chakra-ui/react":
+/*!***********************************!*\
+  !*** external "@chakra-ui/react" ***!
+  \***********************************/
 /***/ ((module) => {
 
 "use strict";
@@ -226,7 +106,7 @@ module.exports = import("@chakra-ui/react");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(4178));
+var __webpack_exports__ = (__webpack_exec__("./pages/_app.tsx"));
 module.exports = __webpack_exports__;
 
 })();
