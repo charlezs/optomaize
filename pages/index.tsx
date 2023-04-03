@@ -52,7 +52,7 @@ export default function Home() {
           </Stack>
 
           <Box w="50%">
-            <Image src="./testimg.jpg" alt="test" />
+            <Image w="100%" h="80%" src="./testimg.jpg" alt="test" />
           </Box>
         </Stack>
       </Container>
