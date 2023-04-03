@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 type Child = {
   children: any;
@@ -8,6 +9,7 @@ function Layout({ children }: Child) {
   return (
     <>
       <main>{children}</main>
+      <Footer />
     </>
   );
 }

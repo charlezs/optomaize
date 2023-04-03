@@ -27,10 +27,10 @@ export default function Home() {
       <Container maxW="100%" backgroundColor="#51da4c" h="100vh">
         <Stack direction="row" gap="100px" pt="100">
           <Stack direction="column" m="0">
-            <Text mt="0" fontSize="60px">
+            <Text mt="0" textColor="black" fontSize="60px">
               Let's face it. Your prompts suck.
             </Text>
-            <Text fontSize="16px" pb="20px">
+            <Text fontSize="16px" textColor="black" pb="20px">
               Welcome to promptomize, your AI friend that helps YOU make good
               prompts.
             </Text>
@@ -59,6 +59,7 @@ export default function Home() {
       <Container maxW="100%" backgroundColor="#51da4c" pb="60px">
         <Text
           fontSize="40px"
+          textColor="black"
           fontFamily="serif"
           fontWeight={520}
           borderTop="2px"

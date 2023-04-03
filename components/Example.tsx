@@ -12,6 +12,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Example() {
   return (
@@ -22,54 +23,113 @@ export default function Example() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container maxW="100%" h="100vh" mt="30px">
+      <Container maxW="100%" mt="30px">
         <Box>
-          <Text borderBottom="2px" borderColor="#51da4c" fontSize="25px">
+          <Text
+            borderBottom="2px"
+            borderColor="#51da4c"
+            fontSize="25px"
+            textColor="black"
+          >
             It Makes a Big Difference
           </Text>
         </Box>
+        <Box>
+          <HStack justifyContent="space-between">
+            <Heading> YOU promptimized</Heading>
+          </HStack>
+        </Box>
         <Stack direction="row" gap="100px" pt="100">
-          <Stack direction="column" gap="20px" m="0">
-            <Text mt="0" fontSize="20px" w="50%">
-              GPT-4 is more creative and collaborative than ever before. It can
-              generate, edit, and iterate with users on creative and technical
-              writing tasks, such as composing songs, writing screenplays, or
-              learning a users writing style.
-            </Text>
-            <Button
-              bg="transparent"
-              color="#51da4c"
-              borderColor="black"
-              size="md"
-              borderRadius="0"
-              border="2px"
-              fontWeight={400}
-              w="30%"
-              _hover={{
-                background: "black",
-                color: "#51da4c",
-              }}
-            >
-              <NextLink href="/magic">
+          <Box w="90%" border="2px" borderColor="#51da4c" p="15px">
+            <Box borderBottom="2px" mb="20px" borderColor="#51da4c">
+              <Heading textColor="black" fontSize="20px" mb="25px">
+                Input
+              </Heading>
+              <Text textColor="black" mb="25px" fontSize="16px">
+                How can I write better content on Twitter?
+              </Text>
+            </Box>
+            <Box>
+              <Heading textColor="black" fontSize="20px">
                 {" "}
-                <Text color="black">Promptomize</Text>{" "}
-              </NextLink>
-            </Button>
-          </Stack>
+                Output
+              </Heading>
+              <Box mt="20px">
+                <Text textColor="black" fontSize="16px">
+                  <TypeAnimation
+                    sequence={[
+                      "Writing better content on Twitter requires a combination of writing skills, creativity, and knowledge of your target audience. Here are some tips that can help you improve your Twitter content...",
+                      1000,
+                    ]}
+                    speed={70}
+                    deletionSpeed={70}
+                    wrapper="span"
+                    repeat={Infinity}
+                  />
+                </Text>
+              </Box>{" "}
+            </Box>
+          </Box>
 
           <Box w="90%" border="2px" borderColor="#51da4c" p="15px">
             <Box borderBottom="2px" mb="20px" borderColor="#51da4c">
-              <Heading fontSize="20px" mb="25px">
+              <Heading textColor="black" fontSize="20px" mb="25px">
                 Input
               </Heading>
-              <Text mb="25px">How can I write better content on Twitter?</Text>
+              <Text textColor="black" mb="25px" fontSize="16px">
+                In today's fast-paced digital world, it's more important than
+                ever to create engaging and high-quality content on Twitter.
+                What are some effective strategies and best practices for
+                writing better content on Twitter? How can you utilize different
+                media formats, target the right audience, and develop a
+                consistent brand voice to improve your Twitter content? Please
+                provide specific examples and actionable tips for creating
+                top-notch tweets."{" "}
+              </Text>
             </Box>
             <Box>
-              <Heading fontSize="20px"> Output</Heading>
-              {/* //Type animation */}
+              <Heading textColor="black" fontSize="20px">
+                {" "}
+                Output
+              </Heading>
+              <Box mt="20px">
+                <Text textColor="black" fontSize="16px">
+                  <TypeAnimation
+                    sequence={[
+                      "Creating engaging and high-quality content on Twitter can help you connect with your target audience, boost your brand's visibility and improve your overall social media marketing strategy. Here are some effective strategies and best practices to follow for writing better content on Twitter...",
+                      1000,
+                    ]}
+                    speed={70}
+                    deletionSpeed={70}
+                    wrapper="span"
+                    repeat={Infinity}
+                  />
+                </Text>
+              </Box>{" "}
             </Box>
           </Box>
         </Stack>
+        <Center py="50">
+          <Button
+            bg="transparent"
+            color="#51da4c"
+            borderColor="black"
+            size="md"
+            borderRadius="0"
+            border="2px"
+            fontWeight={400}
+            w="30%"
+            _hover={{
+              background: "black",
+              color: "#51da4c",
+            }}
+          >
+            <NextLink href="/magic">
+              {" "}
+              <Text color="black">Promptomize</Text>{" "}
+            </NextLink>
+          </Button>
+        </Center>
       </Container>
     </>
   );
