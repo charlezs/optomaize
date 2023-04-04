@@ -57,7 +57,7 @@ export default function Footer() {
           align={{ base: "center", md: "center" }}
         >
           <Text>© charles1.eth. All rights reserved</Text>
-          <Stack direction={"row"} spacing={6}>
+          <Stack direction={"row"} spacing={2}>
             <SocialButton label={"Twitter"} href={"#"}>
               <FaTwitter />
             </SocialButton>
@@ -68,6 +68,9 @@ export default function Footer() {
               <FaInstagram />
             </SocialButton>
           </Stack>
+          <a href="/">
+            <Text> back to top!</Text>
+          </a>
         </Container>
       </Box>
     </>
