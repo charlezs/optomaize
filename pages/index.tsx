@@ -11,8 +11,9 @@ import {
   Text,
   Divider,
 } from "@chakra-ui/react";
-import Example from "@/components/Example";
 import Hero from "@/components/Hero";
+import { TypeAnimation } from "react-type-animation";
+import NextLink from "next/link";
 
 export default function Home() {
   return (
@@ -25,7 +26,111 @@ export default function Home() {
       </Head>
       <Hero />
       <Container maxW="100%" backgroundColor="white">
-        <Example />
+        <Container maxW="100%" py="30px">
+          <Box>
+            <Text
+              borderBottom="2px"
+              borderColor="#51da4c"
+              fontSize="25px"
+              textColor="black"
+            >
+              It Makes a Big Difference
+            </Text>
+          </Box>
+
+          <Stack direction="row" gap="100px" pt="100">
+            <Box w="90%" border="2px" borderColor="#51da4c" p="15px">
+              <Box borderBottom="2px" mb="20px" borderColor="#51da4c">
+                <Heading textColor="black" fontSize="20px" mb="25px">
+                  Regular Input
+                </Heading>
+                <Text textColor="black" mb="25px" fontSize="16px">
+                  How can I write better content on Twitter?
+                </Text>
+              </Box>
+              <Box>
+                <Heading textColor="black" fontSize="20px">
+                  {" "}
+                  Output
+                </Heading>
+                <Box mt="20px">
+                  <Text textColor="black" fontSize="16px">
+                    <TypeAnimation
+                      sequence={[
+                        "Writing better content on Twitter requires a combination of writing skills, creativity, and knowledge of your target audience. Here are some tips that can help you improve your Twitter content...",
+                        1000,
+                      ]}
+                      speed={70}
+                      deletionSpeed={70}
+                      wrapper="span"
+                      repeat={Infinity}
+                    />
+                  </Text>
+                </Box>{" "}
+              </Box>
+            </Box>
+
+            <Box w="90%" border="2px" borderColor="#51da4c" p="15px">
+              <Box borderBottom="2px" mb="20px" borderColor="#51da4c">
+                <Heading textColor="black" fontSize="20px" mb="25px">
+                  Promptomized Input ⚡
+                </Heading>
+                <Text textColor="black" mb="25px" fontSize="16px">
+                  In todays fast-paced digital world, its more important than
+                  ever to create engaging and high-quality content on Twitter.
+                  What are some effective strategies and best practices for
+                  writing better content on Twitter? How can you utilize
+                  different media formats, target the right audience, and
+                  develop a consistent brand voice to improve your Twitter
+                  content? Please provide specific examples and actionable tips
+                  for creating top-notch tweets.{" "}
+                </Text>
+              </Box>
+              <Box>
+                <Heading textColor="black" fontSize="20px">
+                  {" "}
+                  Output
+                </Heading>
+                <Box mt="20px">
+                  <Text textColor="black" fontSize="16px">
+                    <TypeAnimation
+                      sequence={[
+                        "Creating engaging and high-quality content on Twitter can help you connect with your target audience, boost your brands visibility and improve your overall social media marketing strategy. Here are some effective strategies and best practices to follow for writing better content on Twitter...",
+                        1000,
+                      ]}
+                      speed={70}
+                      deletionSpeed={70}
+                      wrapper="span"
+                      repeat={Infinity}
+                    />
+                  </Text>
+                </Box>{" "}
+              </Box>
+            </Box>
+          </Stack>
+          <Center py="100px">
+            <Button
+              bg="transparent"
+              size="md"
+              p="7"
+              borderRadius="0"
+              border="2px"
+              borderColor="#51da4c"
+              textColor="black"
+              fontWeight={400}
+              w="30%"
+              _hover={{
+                background: "black",
+                color: "#51da4c",
+              }}
+            >
+              <NextLink href="/magic">
+                {" "}
+                <Text>Promptomize</Text>{" "}
+              </NextLink>
+            </Button>
+          </Center>
+        </Container>{" "}
       </Container>
     </>
   );
