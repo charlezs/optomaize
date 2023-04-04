@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ReactNode } from "react";
+import Link from "next/link";
 
 const SocialButton = ({
   children,
@@ -68,9 +69,9 @@ export default function Footer() {
               <FaInstagram />
             </SocialButton>
           </Stack>
-          <a href="/">
+          <Link href="/">
             <Text> back to top!</Text>
-          </a>
+          </Link>
         </Container>
       </Box>
     </>
