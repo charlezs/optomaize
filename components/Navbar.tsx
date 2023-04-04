@@ -29,13 +29,13 @@ export default function Navigation() {
     <Box>
       <Flex
         bg="black"
-        color={useColorModeValue("gray.600", "white")}
+        color="#51da4c"
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
         borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
+        borderColor="#51da4c"
         align={"center"}
       >
         <Flex
@@ -159,11 +159,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 
 const MobileNav = () => {
   return (
-    <Stack
-      bg={useColorModeValue("white", "gray.800")}
-      p={4}
-      display={{ md: "none" }}
-    >
+    <Stack bg="#51da4c" p={4} display={{ md: "none" }}>
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
