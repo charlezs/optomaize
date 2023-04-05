@@ -5,12 +5,13 @@ import {
   Heading,
   Box,
   Text,
-  Divider,
+  Button,
+  Icon,
 } from "@chakra-ui/react";
 import Hero from "@/components/Hero";
 import { TypeAnimation } from "react-type-animation";
 import NextLink from "next/link";
-
+import { BsArrowUpRight } from "react-icons/bs";
 export default function Home() {
   return (
     <>
@@ -51,7 +52,7 @@ export default function Home() {
                   mb="25px"
                   fontSize="16px"
                   pl="15px"
-                  h="13vh"
+                  h="15vh"
                 >
                   How can I write better content on Twitter?
                 </Text>
@@ -89,7 +90,13 @@ export default function Home() {
                 >
                   Promptomized Input
                 </Heading>
-                <Text textColor="#51da4c" mb="25px" fontSize="16px" pl="15px">
+                <Text
+                  textColor="#51da4c"
+                  mb="25px"
+                  fontSize="16px"
+                  pl="15px"
+                  h="15vh"
+                >
                   In todays fast-paced digital world, its more important than
                   ever to create engaging and high-quality content on Twitter.
                   What are some effective strategies and best practices for
@@ -123,6 +130,38 @@ export default function Home() {
             </Box>
           </Stack>
         </Container>{" "}
+      </Container>
+      <Container maxW="100%" backgroundColor="black" py="60px">
+        <Container maxW="100%">
+          <Text
+            fontSize="40px"
+            textColor="#51da4c"
+            fontFamily="serif"
+            fontWeight={520}
+            borderTop="2px"
+            borderColor="#51da4c"
+            pb="30px"
+          >
+            If you are looking to increase your efficiency and productivity with
+            GPT technology your prompts matter. Promptimize them now!
+          </Text>
+          <Button
+            bg="transparent"
+            color="#51da4c"
+            size="lg"
+            w="30%"
+            borderRadius="0"
+            border="2px"
+            fontWeight={400}
+            _hover={{
+              background: "#51da4c",
+              color: "black",
+            }}
+          >
+            <Text mr="2">Promptomize Your Prompts</Text>
+            <Icon as={BsArrowUpRight} />
+          </Button>
+        </Container>
       </Container>
     </>
   );

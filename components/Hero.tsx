@@ -43,7 +43,7 @@ export default function Hero() {
                 fontWeight={400}
                 _hover={{
                   background: "#51da4c",
-                  color: "#black",
+                  color: "black",
                 }}
               >
                 {" "}

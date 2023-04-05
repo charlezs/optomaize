@@ -52,20 +52,20 @@ export default function Footer() {
           as={Stack}
           maxW={"6xl"}
           py={4}
+          px="0"
           direction={{ base: "column", md: "row" }}
           spacing={4}
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© charles1.eth. All rights reserved</Text>
           <Stack direction={"row"} spacing={2}>
             <SocialButton label={"Twitter"} href={"#"}>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={"YouTube"} href={"#"}>
+            <SocialButton label={"Github"} href={"#"}>
               <FaYoutube />
             </SocialButton>
-            <SocialButton label={"Instagram"} href={"#"}>
+            <SocialButton label={"OpenAI"} href={"#"}>
               <FaInstagram />
             </SocialButton>
           </Stack>
