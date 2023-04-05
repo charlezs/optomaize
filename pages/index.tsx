@@ -12,6 +12,7 @@ import Hero from "@/components/Hero";
 import { TypeAnimation } from "react-type-animation";
 import NextLink from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
+import Link from "next/link";
 export default function Home() {
   return (
     <>
@@ -158,7 +159,9 @@ export default function Home() {
               color: "black",
             }}
           >
-            <Text mr="2">Promptomize Your Prompts</Text>
+            <Link href="/promptomize">
+              <Text mr="2">Promptomize Your Prompts</Text>
+            </Link>
             <Icon as={BsArrowUpRight} />
           </Button>
         </Container>
