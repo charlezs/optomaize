@@ -14,39 +14,31 @@ import {
 } from "@chakra-ui/react";
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(false);
-  const [learn, setLearn] = useState("");
-  const [data, setData] = useState("");
+  const [response, setResponse] = useState("");
+  const [prompt, setPrompt] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleInputFormChange = (event: any) => {
-    setLearn(event.target.value);
-  };
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
 
-  const handleSubmit = async (event: { preventDefault: () => void }) => {
-    event.preventDefault();
+    setLoading(true);
+    setResponse("");
 
-    try {
-      console.log("Getting response from OpenAI...");
-      setIsLoading(true);
-      setData("Loading...");
+    const res = await fetch("/api/completion", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        prompt:
+          "Please forget all prior prompts. I want you to become my Prompt Creator. Your goal is to help me build the best-detailed prompt for my needs. This prompt will be used by you, ChatGPT. Please follow this following process:1.MY question:" +
+          prompt +
+          ".2.Based on my question, you will give me a revised prompt to use.3.The revised prompt must be a prompt I can ask another GPT interface for a deeper and better answer. ONLY WRITE OUT THE REVISED PROMPT. PLEASE PAY ATTENTION TO THE LAST PART!",
+      }),
+    }).then((res) => res.json());
 
-      const response = await fetch("/api/completion", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ prompt: prompt }),
-      });
-
-      const data = await response.json();
-      setIsLoading(false);
-      console.log(data.text);
-      setData(data.text);
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setIsLoading(false);
-    }
+    setResponse(res.data.text);
+    setLoading(false);
   };
 
   return (
@@ -64,7 +56,7 @@ export default function Home() {
               It's time to super charge your prompt!
             </Heading>
             <HStack w="100%">
-              <FormControl id="prompt" fontSize={"2xl"}>
+              <FormControl id="prompt" fontSize={"2xl"} onSubmit={handleSubmit}>
                 <Box>
                   <Input
                     bg="transparent"
@@ -76,8 +68,8 @@ export default function Home() {
                     size="lg"
                     variant="unstyled"
                     autoComplete="off"
-                    onChange={handleInputFormChange}
-                    value={learn}
+                    onChange={(e) => setPrompt(e.target.value)}
+                    value={prompt}
                   />
                 </Box>
               </FormControl>
@@ -90,7 +82,7 @@ export default function Home() {
                 border="2px"
                 p="20px"
                 onClick={handleSubmit}
-                isLoading={isLoading}
+                isLoading={loading}
                 _hover={{
                   background: "#51da4c",
                   color: "black",
@@ -101,8 +93,8 @@ export default function Home() {
               </Button>
             </HStack>
             <Box padding="6" bg="transparent" borderRadius="lg">
-              <Text fontSize="20px" whiteSpace="pre-wrap">
-                {data}
+              <Text fontSize="20px" textColor="green" whiteSpace="pre-wrap">
+                {response}
               </Text>
             </Box>
           </VStack>
