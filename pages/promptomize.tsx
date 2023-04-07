@@ -27,13 +27,22 @@ export default function Home() {
     event.preventDefault();
 
     try {
+      console.log("Getting response from OpenAI...");
       setIsLoading(true);
+      setData("Loading...");
 
-      const response = await axios.post("/api/generate-text", {
-        prompt: learn,
+      const response = await fetch("/api/openai", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ prompt: prompt }),
       });
 
-      setData(response.data);
+      const data = await response.json();
+      setIsLoading(false);
+      console.log(data.text);
+      setData(data.text);
     } catch (error) {
       console.error(error);
     } finally {
@@ -94,7 +103,11 @@ export default function Home() {
             </HStack>
             <Box padding="6" bg="transparent" borderRadius="lg">
               <Text fontSize="20px" whiteSpace="pre-wrap">
-                {data}
+                {isLoading ? (
+                  <Text>Waiting for superchared prompt... </Text>
+                ) : (
+                  data
+                )}
               </Text>
             </Box>
           </VStack>
