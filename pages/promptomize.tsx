@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { useState } from "react";
+import axios from "axios";
 import {
   VStack,
   Center,
@@ -11,12 +13,8 @@ import {
   Container,
   HStack,
 } from "@chakra-ui/react";
-import { useState } from "react";
-import axios from "axios";
 
 export default function Home() {
-  const apiKey = process.env.NEXT_PUBLIC_API_KEY;
-
   const [isLoading, setIsLoading] = useState(false);
   const [learn, setLearn] = useState("");
   const [data, setData] = useState("");
@@ -25,36 +23,22 @@ export default function Home() {
     setLearn(event.target.value);
   };
 
-  const gptPostClient = axios.create({
-    baseURL: "https://api.openai.com/v1/chat/completions",
-  });
+  const handleSubmit = async (event: { preventDefault: () => void }) => {
+    event.preventDefault();
 
-  const returnResults = async () => {
-    setIsLoading(true);
-    const prompt =
-      ". When the debate is over say, this brings an end to the debate, thank you for listening! Lastly make sure that your responses to each side are creative and not repetitive.";
-    gptPostClient
-      .post(
-        "",
-        {
-          model: "text-davinci-003",
-          prompt: prompt,
-          max_tokens: 1000,
-          temperature: 0,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${apiKey}`,
-          },
-        }
-      )
-      .then((resp) => {
-        setData(resp.data.choices[0].text.trim());
+    try {
+      setIsLoading(true);
+
+      const response = await axios.post("/api/generate-text", {
+        prompt: learn,
       });
-    setTimeout(() => {
+
+      setData(response.data);
+    } catch (error) {
+      console.error(error);
+    } finally {
       setIsLoading(false);
-    }, 7000);
+    }
   };
 
   return (
@@ -97,7 +81,7 @@ export default function Home() {
                 borderRadius="0"
                 border="2px"
                 p="20px"
-                onClick={returnResults}
+                onClick={handleSubmit}
                 isLoading={isLoading}
                 _hover={{
                   background: "#51da4c",
@@ -119,3 +103,49 @@ export default function Home() {
     </>
   );
 }
+
+import type { NextApiRequest, NextApiResponse } from "next";
+// const { Configuration, OpenAIApi } = require("openai");
+
+// type Data = {
+//   name: string;
+//   message?: string;
+//   error: string;
+// };
+
+// export default async function handler(
+//   req: NextApiRequest,
+//   res: NextApiResponse<Data>
+// ) {
+//   try {
+//     const prompt = req.body.prompt;
+
+//     const configuration = new Configuration({
+//       apiKey: "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",
+//     });
+//     const openai = new OpenAIApi(configuration);
+
+//     const charles = async () => {
+//       console.log("bi");
+//       const completion = await openai.createCompletion({
+//         model: "text-davinci-003",
+//         prompt: prompt,
+//         maxTokens: 2048,
+//       });
+//       console.log(completion.data.choices[0].text);
+//       return completion.data.choices[0].text;
+//     };
+
+//     const result = await charles();
+//     res.status(200).json(result);
+//   } catch (error) {
+//     console.error(error);
+//     if (error.response && error.response.status) {
+//       res.status(error.response.status).json({ message: error.message });
+//     } else if (error.request && error.request.status) {
+//       res.status(error.request.status).json({ message: error.message });
+//     } else {
+//       res.status(500).json({ message: error.message });
+//     }
+//   }
+// }
