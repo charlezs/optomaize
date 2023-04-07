@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useState } from "react";
-import axios from "axios";
 import {
   VStack,
   Center,
@@ -31,7 +30,7 @@ export default function Home() {
       setIsLoading(true);
       setData("Loading...");
 
-      const response = await fetch("/api/openai", {
+      const response = await fetch("/api/completion", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -103,11 +102,7 @@ export default function Home() {
             </HStack>
             <Box padding="6" bg="transparent" borderRadius="lg">
               <Text fontSize="20px" whiteSpace="pre-wrap">
-                {isLoading ? (
-                  <Text>Waiting for superchared prompt... </Text>
-                ) : (
-                  data
-                )}
+                {data}
               </Text>
             </Box>
           </VStack>
