@@ -146,24 +146,24 @@ export default function Home() {
             If you are looking to increase your efficiency and productivity with
             GPT technology your prompts matter. Promptimize them now!
           </Text>
-          <Button
-            bg="transparent"
-            color="#51da4c"
-            size="lg"
-            w="30%"
-            borderRadius="0"
-            border="2px"
-            fontWeight={400}
-            _hover={{
-              background: "#51da4c",
-              color: "black",
-            }}
-          >
-            <Link href="/promptomize">
+          <Link href="/promptomize">
+            <Button
+              bg="transparent"
+              color="#51da4c"
+              size="lg"
+              w="30%"
+              borderRadius="0"
+              border="2px"
+              fontWeight={400}
+              _hover={{
+                background: "#51da4c",
+                color: "black",
+              }}
+            >
               <Text mr="2">Promptomize Your Prompts</Text>
-            </Link>
-            <Icon as={BsArrowUpRight} />
-          </Button>
+              <Icon as={BsArrowUpRight} />
+            </Button>
+          </Link>
         </Container>
       </Container>
     </>

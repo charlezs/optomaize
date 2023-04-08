@@ -9,6 +9,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { useRef } from "react";
+import NextLink from "next/link";
 
 export default function Hero() {
   const scrollToRef = useRef<HTMLDivElement>(null);
@@ -33,27 +34,27 @@ export default function Hero() {
               charged prompts.
             </Text>
             <HStack gap="20px">
-              <Button
-                bg="transparent"
-                color="#51da4c"
-                size="sm"
-                w="30%"
-                borderRadius="0"
-                border="2px"
-                fontWeight={400}
-                _hover={{
-                  background: "#51da4c",
-                  color: "black",
-                }}
-              >
-                {" "}
-                Promptomize
-              </Button>
+              <Link as={NextLink} href="/">
+                <Button
+                  bg="transparent"
+                  color="#51da4c"
+                  size="sm"
+                  borderRadius="0"
+                  border="2px"
+                  fontWeight={400}
+                  _hover={{
+                    background: "#51da4c",
+                    color: "black",
+                  }}
+                >
+                  <Text> Promptomize</Text>
+                </Button>
+              </Link>
               <Text
                 bg="transparent"
                 color="#51da4c"
                 size="sm"
-                w="15%"
+                w="100%"
                 fontWeight={400}
                 _hover={{
                   textDecoration: "underline",

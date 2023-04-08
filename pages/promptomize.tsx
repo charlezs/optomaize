@@ -11,7 +11,9 @@ import {
   Box,
   Container,
   HStack,
+  Link,
 } from "@chakra-ui/react";
+import NextLink from "next/link";
 
 export default function Home() {
   const [response, setResponse] = useState("");
@@ -73,24 +75,25 @@ export default function Home() {
                   />
                 </Box>
               </FormControl>
-              <Button
-                bg="transparent"
-                color="#51da4c"
-                size="lg"
-                w="30%"
-                borderRadius="0"
-                border="2px"
-                p="20px"
-                onClick={handleSubmit}
-                isLoading={loading}
-                _hover={{
-                  background: "#51da4c",
-                  color: "black",
-                }}
-              >
-                {" "}
-                Promptimize
-              </Button>
+              <Link as={NextLink} href="/">
+                <Button
+                  bg="transparent"
+                  color="#51da4c"
+                  size="lg"
+                  borderRadius="0"
+                  border="2px"
+                  p="20px"
+                  onClick={handleSubmit}
+                  isLoading={loading}
+                  _hover={{
+                    background: "#51da4c",
+                    color: "black",
+                  }}
+                >
+                  {" "}
+                  Promptimize
+                </Button>
+              </Link>
             </HStack>
             <Box padding="6" bg="transparent" borderRadius="lg">
               <Text fontSize="20px" textColor="green" whiteSpace="pre-wrap">
@@ -103,5 +106,3 @@ export default function Home() {
     </>
   );
 }
-
-import type { NextApiRequest, NextApiResponse } from "next";
