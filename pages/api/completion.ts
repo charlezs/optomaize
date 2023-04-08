@@ -14,9 +14,7 @@ export default async function handler(
   const response = await openai.createCompletion({
     prompt,
     model: "text-davinci-003",
-    temperature: 0.6,
-    max_tokens: 100,
-    n: 1,
+    max_tokens: 1000,
   });
 
   const firstResponse = response.data.choices[0];

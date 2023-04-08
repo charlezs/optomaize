@@ -31,9 +31,9 @@ export default function Home() {
       },
       body: JSON.stringify({
         prompt:
-          "Please forget all prior prompts. I want you to become my Prompt Creator. Your goal is to help me build the best-detailed prompt for my needs. This prompt will be used by you, ChatGPT. Please follow this following process:1.MY question:" +
+          "Please forget all prior prompts. I want you to become my Prompt Creator. Your goal is to help me build the best-detailed prompt for my needs. This prompt will be used by you, ChatGPT. Please follow this following process: 1. MY question: " +
           prompt +
-          ".2.Based on my question, you will give me a revised prompt to use.3.The revised prompt must be a prompt I can ask another GPT interface for a deeper and better answer. ONLY WRITE OUT THE REVISED PROMPT. PLEASE PAY ATTENTION TO THE LAST PART!",
+          ". 2. Based on my question, you will give me a revised prompt to use this prompt will be at least 3 sentences long. 3.The revised prompt must be a prompt I can ask another GPT interface for a deeper and better answer. ONLY WRITE OUT THE REVISED PROMPT. PLEASE PAY ATTENTION TO THE LAST PART! Write out the revised prompt startinng with: Here is your Super Charged prompt: and put a line break before the response",
       }),
     }).then((res) => res.json());
 
@@ -105,47 +105,3 @@ export default function Home() {
 }
 
 import type { NextApiRequest, NextApiResponse } from "next";
-// const { Configuration, OpenAIApi } = require("openai");
-
-// type Data = {
-//   name: string;
-//   message?: string;
-//   error: string;
-// };
-
-// export default async function handler(
-//   req: NextApiRequest,
-//   res: NextApiResponse<Data>
-// ) {
-//   try {
-//     const prompt = req.body.prompt;
-
-//     const configuration = new Configuration({
-//       apiKey: "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",
-//     });
-//     const openai = new OpenAIApi(configuration);
-
-//     const charles = async () => {
-//       console.log("bi");
-//       const completion = await openai.createCompletion({
-//         model: "text-davinci-003",
-//         prompt: prompt,
-//         maxTokens: 2048,
-//       });
-//       console.log(completion.data.choices[0].text);
-//       return completion.data.choices[0].text;
-//     };
-
-//     const result = await charles();
-//     res.status(200).json(result);
-//   } catch (error) {
-//     console.error(error);
-//     if (error.response && error.response.status) {
-//       res.status(error.response.status).json({ message: error.message });
-//     } else if (error.request && error.request.status) {
-//       res.status(error.request.status).json({ message: error.message });
-//     } else {
-//       res.status(500).json({ message: error.message });
-//     }
-//   }
-// }
