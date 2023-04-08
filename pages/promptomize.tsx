@@ -53,7 +53,7 @@ export default function Home() {
         <Center>
           <VStack w="5xl" h="100vh" gap="50px">
             <Heading fontSize="50px" mt="10" color="#51da4c">
-              It's time to super charge your prompt!
+              It&#39s time to super charge your prompt!
             </Heading>
             <HStack w="100%">
               <FormControl id="prompt" fontSize={"2xl"} onSubmit={handleSubmit}>
