@@ -35,7 +35,7 @@ export default function Home() {
         prompt:
           "Please forget all prior prompts. I want you to become my Prompt Creator. Your goal is to help me build the best-detailed prompt for my needs. This prompt will be used by you, ChatGPT. Please follow this following process: 1. MY question: " +
           prompt +
-          ". 2. Based on my question, you will give me a revised prompt to use this prompt will be at least 5 sentences long. 3.The revised prompt must be a prompt I can ask another GPT interface for a deeper and better answer. ONLY WRITE OUT THE REVISED PROMPT. PLEASE PAY ATTENTION TO THE LAST PART! Write out the revised prompt startinng with: Here is your Super Charged prompt: and put a line break before the response",
+          ". 2. Based on my question, you will give me a revised prompt to use this prompt will be at least 5 sentences long. 3.The revised prompt must be a prompt I can ask another GPT interface for a deeper and better answer. ONLY WRITE OUT THE REVISED PROMPT. PLEASE PAY ATTENTION TO THE LAST PART! Write out the revised prompt starting with: Here is your Super Charged prompt: and put a line space before the response",
       }),
     }).then((res) => res.json());
 
@@ -95,7 +95,7 @@ export default function Home() {
                 </Button>
               </Link>
             </HStack>
-            <Box padding="6" bg="transparent" borderRadius="lg">
+            <Box bg="transparent" borderRadius="lg">
               <Text fontSize="20px" color="#51da4c" whiteSpace="pre-wrap">
                 {response}
               </Text>
