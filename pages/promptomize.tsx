@@ -96,7 +96,7 @@ export default function Home() {
               </Link>
             </HStack>
             <Box padding="6" bg="transparent" borderRadius="lg">
-              <Text fontSize="20px" textColor="green" whiteSpace="pre-wrap">
+              <Text fontSize="20px" color="#51da4c" whiteSpace="pre-wrap">
                 {response}
               </Text>
             </Box>
