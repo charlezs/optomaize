@@ -66,7 +66,7 @@ export default function Home() {
                     borderRadius="0"
                     border="2px"
                     p="9px"
-                    placeholder="How do I write better content on Twitter?"
+                    placeholder="How do I write better content?"
                     size="lg"
                     variant="unstyled"
                     autoComplete="off"

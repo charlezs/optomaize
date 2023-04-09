@@ -8,7 +8,7 @@ import {
   VisuallyHidden,
   VStack,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 import { ReactNode } from "react";
 import Link from "next/link";
 
@@ -59,14 +59,20 @@ export default function Footer() {
           align={{ base: "center", md: "center" }}
         >
           <Stack direction={"row"} spacing={2}>
-            <SocialButton label={"Twitter"} href={"#"}>
+            <SocialButton
+              label={"Twitter"}
+              href={"https://twitter.com/intent/user?screen_name=learn_charles"}
+            >
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={"Github"} href={"#"}>
-              <FaYoutube />
+            <SocialButton label={"Github"} href={"https://github.com/charlezs"}>
+              <FaGithub />
             </SocialButton>
-            <SocialButton label={"OpenAI"} href={"#"}>
-              <FaInstagram />
+            <SocialButton
+              label={"LinkedIn"}
+              href={"https://www.linkedin.com/in/charles-nyabeze/"}
+            >
+              <FaLinkedin />
             </SocialButton>
           </Stack>
           <Link href="/">

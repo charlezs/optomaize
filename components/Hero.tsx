@@ -74,8 +74,8 @@ export default function Hero() {
       <Container
         maxW="100%"
         backgroundColor="black"
-        pt={{ sm: "200px", md: "60px" }}
-        pb={{ sm: "100px", md: "60px" }}
+        pt={{ base: "300px", sm: "200px", md: "60px" }}
+        pb={{ base: "150px", sm: "100px", md: "60px" }}
       >
         <Container maxW="100%">
           <Text

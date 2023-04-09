@@ -25,7 +25,7 @@ export default function Home() {
       <Hero />
 
       <Container maxW="100%" backgroundColor="black">
-        <Container maxW="100%" py="30px">
+        <Container maxW="100%">
           <Box>
             <Text
               borderTop="2px"
@@ -37,7 +37,12 @@ export default function Home() {
             </Text>
           </Box>
 
-          <Stack direction="row" gap="10px" pt="100" pb="100px">
+          <Stack
+            direction={{ base: "column", sm: "column", md: "row" }}
+            gap="10px"
+            pt="100"
+            pb="100px"
+          >
             <Box w="90%" border="2px" borderColor="green">
               <Box borderBottom="2px" mb="20px" borderColor="green" w="100%">
                 <Heading
@@ -54,7 +59,7 @@ export default function Home() {
                   mb="25px"
                   fontSize="16px"
                   pl="15px"
-                  h="15vh"
+                  h={{ sm: "", md: "15vh" }}
                 >
                   How can I write better content on Twitter?
                 </Text>
@@ -97,7 +102,7 @@ export default function Home() {
                   mb="25px"
                   fontSize="16px"
                   pl="15px"
-                  h="15vh"
+                  h={{ sm: "", md: "15vh" }}
                 >
                   In todays fast-paced digital world, its more important than
                   ever to create engaging and high-quality content on Twitter.
@@ -133,7 +138,11 @@ export default function Home() {
           </Stack>
         </Container>{" "}
       </Container>
-      <Container maxW="100%" backgroundColor="black" py="60px">
+      <Container
+        maxW="100%"
+        backgroundColor="black"
+        py={{ base: "100px", sm: "60px", md: "60px" }}
+      >
         <Container maxW="100%">
           <Text
             fontSize="40px"
@@ -152,7 +161,7 @@ export default function Home() {
               bg="transparent"
               color="#51da4c"
               size="lg"
-              w="30%"
+              w={{ sm: "100%", md: "30%" }}
               borderRadius="0"
               border="2px"
               fontWeight={400}

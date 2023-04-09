@@ -248,7 +248,7 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: "Promptimize",
-        href: "/",
+        href: "/promptomize",
       },
     ],
   },
