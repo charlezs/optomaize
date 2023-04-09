@@ -33,9 +33,9 @@ export default function Home() {
       },
       body: JSON.stringify({
         prompt:
-          "Please forget all prior prompts. I want you to become my Prompt Creator. Your goal is to help me build the best-detailed prompt for my needs. This prompt will be used by you, ChatGPT. Please follow this following process: 1. MY question: " +
+          "Please forget all prior prompts. I want you to become my Prompt Creator. Your goal is to help me build the best-detailed prompt for my needs. IF there is a question do not to answer it, your goal is to remake the prompt. This prompt will be used by you, ChatGPT. Please follow this following process: 1. Analyze MY input" +
           prompt +
-          ". 2. Based on my question, you will give me a revised prompt to use this prompt will be at least 5 sentences long. 3.The revised prompt must be a prompt I can ask another GPT interface for a deeper and better answer. ONLY WRITE OUT THE REVISED PROMPT. PLEASE PAY ATTENTION TO THE LAST PART! Write out the revised prompt starting with: Here is your Super Charged prompt: and put a line space before the response",
+          " your goal is not to answer it. 2. Based on my input, you will give me a revised prompt to use this prompt will be at least 5 sentences long. 3.The revised prompt must be a prompt I can ask another GPT interface for a deeper and better answer. DO NOT ANSWER MY INPUT. Write out the revised prompt starting with: Here is your Super Charged prompt:",
       }),
     }).then((res) => res.json());
 
