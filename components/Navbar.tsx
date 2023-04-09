@@ -92,6 +92,7 @@ const DesktopNav = () => {
                   textDecoration: "none",
                   color: "#51da4c",
                 }}
+                isExternal
               >
                 {navItem.label}
               </Link>
@@ -130,6 +131,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       p={2}
       rounded={"md"}
       _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
+      isExternal
     >
       <Stack direction={"row"} align={"center"} textColor="">
         <Box>
@@ -183,7 +185,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           textDecoration: "none",
         }}
       >
-        <Text fontWeight={600} color="#51da4c">
+        <Text fontWeight={600} color="black">
           {label}
         </Text>
         {children && (
@@ -246,7 +248,7 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: "Promptimize",
-        href: "/promptimize",
+        href: "/",
       },
     ],
   },
