@@ -23,6 +23,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+
       <Container maxW="100%" backgroundColor="black">
         <Container maxW="100%" py="30px">
           <Box>

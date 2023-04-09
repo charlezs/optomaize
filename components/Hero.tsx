@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <>
       <Container maxW="100%" backgroundColor="black" h="100vh">
-        <HStack direction="row" pt="100">
+        <Stack direction={{ base: "column", sm: "column", md: "row" }} pt="100">
           <Stack direction="column" m="0" w="90%">
             <Text mt="0" textColor="#51da4c" fontSize="60px">
               Lets face it.
@@ -69,9 +69,14 @@ export default function Hero() {
           <Box w="100%" h="100%">
             <Image src="./tesstimg.jpg" alt="test" />
           </Box>
-        </HStack>
+        </Stack>
       </Container>
-      <Container maxW="100%" backgroundColor="black" py="60px">
+      <Container
+        maxW="100%"
+        backgroundColor="black"
+        pt={{ sm: "200px", md: "60px" }}
+        pb={{ sm: "100px", md: "60px" }}
+      >
         <Container maxW="100%">
           <Text
             fontSize="40px"
