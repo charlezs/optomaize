@@ -53,7 +53,11 @@ export default function Home() {
       </Head>
       <Container maxW="100%" bg="black">
         <Center>
-          <VStack w="5xl" h="100vh" gap="50px">
+          <VStack
+            w="5xl"
+            h={{ base: "150vh", sm: "150vh", md: "100vh" }}
+            gap="50px"
+          >
             <Heading fontSize="50px" mt="10" color="#51da4c">
               It is time to super charge your prompt!
             </Heading>
