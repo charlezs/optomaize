@@ -34,7 +34,7 @@ export default function Hero() {
               charged prompts.
             </Text>
             <HStack gap="20px">
-              <Link as={NextLink} href="/">
+              <Link as={NextLink} href="/promptomize">
                 <Button
                   bg="transparent"
                   color="#51da4c"
